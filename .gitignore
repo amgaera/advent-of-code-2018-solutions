@@ -1,0 +1,9 @@
+# Object files and binaries
+bin/
+obj/
+
+# Visual Studio cache
+.vs/
+
+# Input files
+input
