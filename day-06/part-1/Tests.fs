@@ -15,3 +15,16 @@ let ``The size of the largest finite area in the first example is 17`` () =
     |]
 
     Assert.Equal (17, Solution.getLargestFiniteAreaSize coordinates)
+
+[<Fact>]
+let ``The size of the largest finite area in the first example with changed order is 17`` () =
+    let coordinates = [|
+        "3, 4"
+        "1, 1"
+        "1, 6"
+        "8, 3"
+        "5, 5"
+        "8, 9"
+    |]
+
+    Assert.Equal (17, Solution.getLargestFiniteAreaSize coordinates)
