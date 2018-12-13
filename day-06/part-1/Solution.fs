@@ -135,10 +135,5 @@ let getLargestFiniteAreaSize coordinates =
     
     getCoordsWithFiniteAreas minBoundingRect parsedCoords
     |> Seq.map (getCoordinateArea parsedCoords)
-    |> Seq.toArray
-    |> printfn "%A"
-
-    getCoordsWithFiniteAreas minBoundingRect parsedCoords
-    |> Seq.map (getCoordinateArea parsedCoords)
     |> Seq.map List.length
     |> Seq.max
